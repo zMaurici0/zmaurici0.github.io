@@ -1,0 +1,15 @@
+body{
+    height: 3000px;
+    margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(18, 18, 18);
+    font-family: Arial;
+}
+a {
+    line-height: 0;
+    display: inline-block;
+}
+html {
+    scroll-behavior: smooth;
+  }

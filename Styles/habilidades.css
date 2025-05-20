@@ -1,0 +1,82 @@
+
+.habilidades{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 40px;
+    font-family: Ubuntu Sans Mono;
+    height: 800px;
+}
+
+.titulo-habilidades{
+    font-family: Ubuntu Sans Mono;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgb(255, 204, 0);
+}
+.grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    column-gap: 40px;
+}
+.grid{
+    height: 170px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 204, 0);
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px rgba(250, 221, 103, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grid:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 25px rgba(255, 204, 0, 0.5);
+    cursor: pointer;
+}
+.icon-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 0;
+}
+.icon-title{
+    color: white;
+    margin-bottom: 10px;
+}
+.icon-title-html{
+    margin-bottom: 0;
+}
+.icon-image-html{
+    height: 120px;
+    margin-bottom: 3px;
+}
+.icon-image{
+    height: 110px;
+}
+
+@media (max-width: 1048px){
+    .grid-skills{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 30px;
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    .divisoria{
+        margin-top: 250px;
+    }
+}
