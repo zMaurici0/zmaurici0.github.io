@@ -1,12 +1,11 @@
 
-.titulo-projeto{
-    margin-top: 300px;
+.titulo-projeto {
+    margin-top: 200px;
     margin-bottom: 100px;
     color: white;
     display: flex;
     justify-content: center;
     font-family: Ubuntu Sans Mono;
-    color: white;
     font-size: 40px;
     text-shadow: 0 0 10px rgb(255, 204, 0);
 }
@@ -123,16 +122,6 @@
     background-color: #ffcc00;
     color: black;
     transform: scale(1.05);
-}
-.titulo-projeto {
-    margin-top: 300px;
-    margin-bottom: 100px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-family: Ubuntu Sans Mono;
-    font-size: 40px;
-    text-shadow: 0 0 10px rgb(255, 204, 0);
 }
 
 @media (max-width: 1048px){

@@ -25,7 +25,7 @@
 
 .grid-skills{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 30px;
     column-gap: 40px;
 }
@@ -39,6 +39,7 @@
     border-radius: 30px;
     box-shadow: 1px 1px 20px rgba(250, 221, 103, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 60px;
 }
 .grid:hover {
     transform: translateY(-10px);
@@ -68,10 +69,15 @@
     height: 110px;
 }
 
+.flask-icon{
+     height: 110px;
+     filter: invert(70%) brightness(150%);
+}
+
 @media (max-width: 1048px){
     .grid-skills{
         display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 30px;
         column-gap: 40px;
         row-gap: 40px;
