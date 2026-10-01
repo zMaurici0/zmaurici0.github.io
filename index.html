@@ -1,249 +1,463 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Portfolio</title>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Maurício Mota | QA e Automação</title>
+    <meta name="description" content="Portfólio de Maurício Mota: analista de automação em transição para QA. Testes Web e API com Playwright, cenários em Gherkin e pipelines no GitHub Actions.">
 
-        <link rel="stylesheet" href="Styles/general.css">
-        <link rel="stylesheet" href="Styles/header.css">
-        <link rel="stylesheet" href="Styles/home.css">
-        <link rel="stylesheet" href="Styles/habilidades.css">
-        <link rel="stylesheet" href="Styles/projetos.css">
-    </head>
-    <body>
-       <header>
-            <div class="header">
-                <div class="header-esquerda">
-                    <div>
-                        Mauricio <span style="color: rgb(255, 204, 0);">Mota</span>
-                    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+
+    <!-- Ícones de interface (desenhados, sem marcas) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+            <symbol id="i-grad" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></symbol>
+            <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+            <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+            <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/></symbol>
+            <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5M9 13h8M9 17h8"/></symbol>
+            <symbol id="i-board" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/></symbol>
+        </defs>
+    </svg>
+
+
+    <header class="navbar">
+        <a href="#topo" class="logo">MM</a>
+
+        <nav aria-label="Navegação principal">
+            <a href="#topo">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formacao">Formação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Alternar tema claro e escuro" aria-pressed="false">
+            <span></span>
+        </button>
+    </header>
+
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero">
+
+            <div class="hero-content">
+                <span class="hero-hello">Olá, eu sou</span>
+
+                <h1>Maurício Mota</h1>
+
+                <p class="hero-role">Analista de Automação | rumo a QA</p>
+
+                <p class="hero-description">
+                    Automatizo processos com Python e Power Automate e escrevo testes Web e API
+                    com Playwright, cenários em Gherkin e pipelines no GitHub Actions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projetos" class="button primary">Ver projetos</a>
+                    <a href="#contato" class="button secondary">Falar comigo</a>
                 </div>
-                <div class="header-direita">
-                    <a href="#sobre" style="color: white; text-decoration: none;
-                    display: flex;
-                    align-items: center;">
-                        <div>
-                            Sobre
-                        </div>
-                        
+
+                <ul class="hero-contacts" aria-label="Contatos">
+                    <li><svg class="ui-icon"><use href="#i-link"/></svg><a href="https://www.linkedin.com/in/maurício-mota-006203306/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><svg class="ui-icon"><use href="#i-board"/></svg><a href="https://github.com/zMaurici0" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><svg class="ui-icon"><use href="#i-doc"/></svg><a href="/curriculo/mauricio-cabanhas-mota.pdf" target="_blank" rel="noopener">Currículo</a></li>
+                </ul>
+            </div>
+
+
+            <div class="hero-visual" aria-hidden="true">
+
+                <div class="hero-photo">
+                    <!-- Ilustração: terminal com testes passando, selo de CI e relatório -->
+                    <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" stop-color="#2a2410"/>
+                                <stop offset=".5" stop-color="#161616"/>
+                                <stop offset="1" stop-color="#0e0e0e"/>
+                            </linearGradient>
+                            <pattern id="heroDots" width="16" height="16" patternUnits="userSpaceOnUse">
+                                <circle cx="2" cy="2" r="1" fill="#333"/>
+                            </pattern>
+                            <linearGradient id="heroBars" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#ffcc00"/>
+                                <stop offset="1" stop-color="#ffcc00" stop-opacity=".25"/>
+                            </linearGradient>
+                        </defs>
+
+                        <rect width="400" height="400" fill="url(#heroBg)"/>
+                        <rect width="400" height="400" fill="url(#heroDots)" opacity=".7"/>
+
+                        <!-- terminal -->
+                        <g transform="translate(36 70)">
+                            <rect width="328" height="188" rx="14" fill="#1a1a1a" stroke="#383838"/>
+                            <path d="M0 14a14 14 0 0 1 14-14h300a14 14 0 0 1 14 14v20H0z" fill="#222"/>
+                            <circle cx="18" cy="17" r="4.5" fill="#ffcc00"/><circle cx="32" cy="17" r="4.5" fill="#555"/><circle cx="46" cy="17" r="4.5" fill="#555"/>
+                            <text x="64" y="21" fill="#a6a6a6" font-family="JetBrains Mono, monospace" font-size="11">npx playwright test</text>
+
+                            <g font-family="JetBrains Mono, monospace" font-size="12" fill="#f4f4f2">
+                                <circle cx="22" cy="62" r="7" fill="#7dd3c0"/><path d="M18.5 62l2.5 2.5 4.5-5" stroke="#121212" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <text x="38" y="66">SauceDemo: login e checkout</text>
+
+                                <circle cx="22" cy="90" r="7" fill="#7dd3c0"/><path d="M18.5 90l2.5 2.5 4.5-5" stroke="#121212" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <text x="38" y="94">GET /api/productsList 200</text>
+
+                                <circle cx="22" cy="118" r="7" fill="#7dd3c0"/><path d="M18.5 118l2.5 2.5 4.5-5" stroke="#121212" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <text x="38" y="122">cenários de valor limite</text>
+
+                                <circle cx="22" cy="146" r="7" fill="#7dd3c0"/><path d="M18.5 146l2.5 2.5 4.5-5" stroke="#121212" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <text x="38" y="150">execução no GitHub Actions</text>
+
+                                <text x="20" y="176" fill="#7dd3c0">4 passed</text>
+                            </g>
+                        </g>
+
+                        <!-- selo de CI -->
+                        <g transform="translate(236 50)">
+                            <rect width="128" height="34" rx="17" fill="#121212" stroke="#ddb207"/>
+                            <circle cx="18" cy="17" r="5" fill="#7dd3c0"/>
+                            <text x="32" y="21" fill="#f4f4f2" font-family="JetBrains Mono, monospace" font-size="11">CI passing</text>
+                        </g>
+
+                        <!-- cartão de relatório -->
+                        <g transform="translate(96 278)">
+                            <rect width="208" height="82" rx="12" fill="#1a1a1a" stroke="#383838"/>
+                            <text x="16" y="22" fill="#a6a6a6" font-family="JetBrains Mono, monospace" font-size="10">relatório Allure</text>
+                            <text x="16" y="50" fill="#f4f4f2" font-family="Instrument Sans, sans-serif" font-size="22" font-weight="600">4/4</text>
+                            <text x="16" y="66" fill="#a6a6a6" font-family="Instrument Sans, sans-serif" font-size="9">testes aprovados</text>
+                            <g fill="url(#heroBars)">
+                                <rect x="130" y="44" width="10" height="24" rx="2"/>
+                                <rect x="145" y="32" width="10" height="36" rx="2"/>
+                                <rect x="160" y="38" width="10" height="30" rx="2"/>
+                                <rect x="175" y="20" width="10" height="48" rx="2"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========== SOBRE ========== -->
+        <section id="sobre" class="band">
+            <div class="section about">
+
+                <div class="about-text">
+                    <h2>Sobre mim</h2>
+
+                    <p>
+                        Sou analista de automação no Grupo Enzo, no time de B.I. e Automações de Processos.
+                        Construo fluxos com Python, Power Automate, Power Apps e SharePoint.
+                    </p>
+
+                    <p>
+                        Estou migrando para QA: faço pós-graduação em Qualidade e Testes de Software e mantenho
+                        projetos de teste com Playwright, Cucumber e GitHub Actions. Procuro minha primeira
+                        oportunidade na área e topo trabalhar com qualquer stack.
+                    </p>
+
+                    <a href="https://www.linkedin.com/in/maurício-mota-006203306/" target="_blank" rel="noopener" class="button ghost">
+                        Ver LinkedIn
                     </a>
-                    
-                    <a href="#habilidades" style="color: white; text-decoration: none;
-                    display: flex;
-                    align-items: center;">
-                        <div>
-                            Habilidades
-                        </div>                        
-                    </a>
-                                            
-                    <a href="#projetos" style="color: white; text-decoration: none;
-                    display: flex;
-                    align-items: center;">
-                        Projetos
-                    </a>                        
                 </div>
-            </div>
-       </header> 
 
-
-       <div>
-            <div id="sobre" class="sobre-mim">
-                <div>
-                    <img class="foto" src="Imagens/Minha foto.jpg">
-                </div>
-                <div class="lado-direito">
-                    <div class="titulo">
-                        Olá, Sou o <span style="color: rgb(255, 204, 0);">Maurício</span>
-                    </div>
-                    <div class="texto-sobre-mim">
-                        Estudante de Ciência da Computação, tenho 20 anos e estou me dedicando para conquistar meu primeiro 
-                        emprego na área de tecnologia. Atualmente estou estudando HTML, CSS, JavaScript e Python.
-                        Apesar de ainda não ter experiência na área de TI, trabalhei por dois anos como garçom e caixa em uma garaparia. 
-                        Essa vivência me ensinou a lidar com o público, a trabalhar em equipe e a desenvolver minha comunicação. 
-                        Me considero uma pessoa dedicada, comunicativa e sempre em busca de crescimento, tanto técnico quanto pessoal.
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/maurício-mota-006203306/">
-                            <img class="icon" src="Imagens/linkedin-svgrepo-com.svg">
-                        </a>
-                        <a href="https://github.com/zMaurici0?tab=repositories">
-                            <img class="icon" src="Imagens/github-color-svgrepo-com.svg">
-                        </a>
-                        <a href="https://www.instagram.com/zmaurici0/">
-                            <img class="icon" src="Imagens/instagram-svgrepo-com (1).svg">
-                        </a>
-                    </div>
-                
-                    <div>
-                        <a href="Curriculo/currículo3.pdf" target="_blank">
-                            <button class="botões-lado-direito">
-                                Meu Currículo
-                            </button>
-                        </a>
-                        
-                        <a href="https://wa.me/5567991905224">
-                            <button class="botões-lado-direito">
-                                Entre em Contato
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="divisoria">
+                <ul class="about-info">
+                    <li>
+                        <svg class="ui-icon"><use href="#i-user"/></svg>
+                        <div><strong>Analista de Automação Jr.</strong><span>Grupo Enzo</span></div>
+                    </li>
+                    <li>
+                        <svg class="ui-icon"><use href="#i-grad"/></svg>
+                        <div><strong>Pós-graduação em andamento</strong><span>Qualidade e Testes de Software</span></div>
+                    </li>
+                    <li>
+                        <svg class="ui-icon"><use href="#i-spark"/></svg>
+                        <div><strong>Estudando agora</strong><span>TypeScript e Playwright</span></div>
+                    </li>
+                    <li>
+                        <svg class="ui-icon"><use href="#i-board"/></svg>
+                        <div><strong>Objetivo</strong><span>Primeira vaga em QA, qualquer stack</span></div>
+                    </li>
+                </ul>
 
             </div>
+        </section>
 
-            <div id="habilidades" class="habilidades">
-                <div class="titulo-habilidades">
-                    Habilidades
-                </div>
 
-                <div class="grid-container">
-                    <div class="grid-skills">
-                        <div class="grid">
-                            <div class="icon-div">
-                                <div class="icon-title-html">HTML 5</div>
-                                <img class="icon-image-html" src="Imagens/html-5-svgrepo-com.svg">
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="icon-div">
-                                <div class="icon-title">CSS 3</div>
-                                <img class="icon-image" src="Imagens/css3-svgrepo-com.svg">
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="icon-div">
-                                <div class="icon-title">Javascript</div>
-                                <img class="icon-image" src="Imagens/javascript-svgrepo-com.svg">
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="icon-div">
-                                <div class="icon-title">Python</div>
-                                <img class="icon-image" src="Imagens/python-svgrepo-com.svg">
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="icon-div">
-                                <div class="icon-title">SQL Server</div>
-                                <img class="icon-image" src="Imagens/download (1).png">
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="icon-div">
-                                <div class="icon-title">Java</div>
-                                <img class="icon-image" src="Imagens/java-svgrepo-com.svg">
-                            </div>
-                        </div>
-                         <div class="grid">
-                            <div class="icon-div">
-                                <div class="icon-title">VueJS</div>
-                                <img class="icon-image" src="Imagens/vue-svgrepo-com.svg">
-                            </div>
-                        </div>
-                         <div class="grid">
-                            <div class="icon-div">
-                                <div class="icon-title">Flask</div>
-                                <img class="flask-icon" src="Imagens/flask-svgrepo-com.svg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- ========== PROJETOS ========== -->
+        <section id="projetos" class="section projects">
+
+            <div class="section-title">
+                <h2>Projetos</h2>
+                <p class="section-lead">Do teste manual à automação: projetos que montei para praticar QA.</p>
             </div>
 
-            <div class="divisoria">
+            <div class="projects-grid">
 
-            </div class="flexbox-projeto">
+                <!-- SauceDemo -->
+                <article class="project-card">
+                    <div class="project-cover">
+                        <svg viewBox="0 0 320 130" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                            <rect width="320" height="130" fill="#161616"/>
+                            <rect width="4" height="130" fill="#ffcc00"/>
+                            <g font-family="JetBrains Mono, monospace" font-size="11">
+                                <text x="22" y="28" fill="#7c7c7c">login.feature</text>
+                                <text x="22" y="54"><tspan fill="#ffcc00">Dado</tspan><tspan fill="#f4f4f2"> que estou na tela de login</tspan></text>
+                                <text x="22" y="74"><tspan fill="#ffcc00">Quando</tspan><tspan fill="#f4f4f2"> informo credenciais válidas</tspan></text>
+                                <text x="22" y="94"><tspan fill="#7dd3c0">Então</tspan><tspan fill="#f4f4f2"> vejo a lista de produtos</tspan></text>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="project-body">
+                        <h3>SauceDemo | BDD</h3>
+                        <div class="tags"><span>JavaScript</span><span>Cucumber</span><span>Playwright</span><span>Allure</span></div>
+                        <p>Automação de 10 cenários E2E com BDD/Gherkin, cobrindo autenticação, carrinho e checkout. Estrutura com Page Object Model, Step Definitions e relatórios de execução.</p>
 
-                <div id="projetos" class="titulo-projeto">
-                    Projetos
-                </div>
+                        <details class="more">
+                            <summary>O que cobre</summary>
+                            <ul>
+                                <li>Autenticação de usuários (login e logout)</li>
+                                <li>Cenários de valor limite, responsividade e proteção contra duplo clique</li>
+                                <li>Validação de fluxos completos de checkout</li>
+                                <li>Documentação de QA: plano de teste, casos de teste e análise de risco</li>
+                            </ul>
+                        </details>
 
-                <div class="grid-projetos">   
-
-                    <div class="projetos" 
-                    style="background-image: url(Imagens/Projetos/image.png);
-                    background-size: cover;
-                    background-position: left;
-                    background-repeat: no-repeat;">
-
-                        <div class="conteudo-hover">
-                            <p class="titulo-hover">Youtube Clone</p>
-                            <p class="descrição-hover">Projeto desenvolvido com HTML e CSS que simula a interface principal do YouTube. O objetivo foi praticar a construção de layouts responsivos, alinhamento de elementos e técnicas de estilização visual.</p>
-
-                            <a class="botao-hover" href="https://zmaurici0.github.io/Youtube-Clone/" target="_blank">
-                                    Visitar o site ➔
-                            </a>
-
-                            <a class="botao-hover" href="https://github.com/zMaurici0/Youtube-Clone" target="_blank">
-                                Link Github
-                            </a>
+                        <div class="card-actions">
+                            <a class="repo-link" href="https://github.com/zMaurici0/QA-Cucumber-Playwright-JS" target="_blank" rel="noopener">Ver no GitHub</a>
                         </div>
                     </div>
+                </article>
 
-                    <div class="projetos"
-                    style = "background-image: url(Imagens/Projetos/projeto4.png);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;">
-                        <div class="conteudo-hover">
-                            <p class="titulo-hover">Projeto Flask</p>
-                            <p class="descrição-hover">Sistema web em Python e Flask com múltiplas funcionalidades: consulta de filmes, cadastro de livros, registro de notas e alunos, além de uma interface para anotar conteúdos estudados. </p>
-                            <a class="botao-hover" href="https://appflask-dlsm.onrender.com" target="_blank">
-                                    Visitar o site ➔
-                            </a>
-                            <a class="botao-hover-p2" href="https://github.com/zMaurici0/App_Flask" target="_blank">
-                                Link Github
-                            </a>
-                        </div>
+                <!-- automationexercise -->
+                <article class="project-card">
+                    <div class="project-cover">
+                        <svg viewBox="0 0 320 130" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                            <rect width="320" height="130" fill="#161616"/>
+                            <rect width="4" height="130" fill="#ffcc00"/>
+                            <g font-family="JetBrains Mono, monospace" font-size="11">
+                                <text x="22" y="28" fill="#7c7c7c">products.spec.ts</text>
+                                <text x="22" y="54"><tspan fill="#ffcc00">const</tspan><tspan fill="#f4f4f2"> res = </tspan><tspan fill="#7dd3c0">await</tspan><tspan fill="#f4f4f2"> request.get(url)</tspan></text>
+                                <text x="22" y="74" fill="#f4f4f2">expect(res.status()).toBe(200)</text>
+                                <text x="22" y="104" fill="#7dd3c0">200 OK</text>
+                            </g>
+                        </svg>
                     </div>
-                    
-                    <div class="projetos"
-                    style = "background-image: url(Imagens/Projetos/projeto3.png);
-                    background-size: cover;
-                    background-position: top left;
-                    background-repeat: no-repeat;">
-                        <div class="conteudo-hover">
-                            <p class="titulo-hover">Make Your Burger</p>
-                            <p class="descrição-hover"> Aplicação web desenvolvida com Vue.js 3. O usuário pode montar seu próprio hambúrguer, personalizando os ingredientes conforme sua preferência. Os pedidos são registrados, listados, visualizados e excluídos, implementando assim um ciclo completo de operações CRUD (Create, Read, Update, Delete).</p>
-                            <a class="botao-hover-p2" href="https://github.com/zMaurici0/Make-Your-Burger" target="_blank">
-                                Link Github
-                            </a>
-                        </div>
-                    </div>
+                    <div class="project-body">
+                        <h3>automationexercise | Web e API</h3>
+                        <div class="tags"><span>Playwright</span><span>TypeScript</span><span>Page Object Model</span></div>
+                        <p>Suíte de 26 casos automatizados de Web e API com Playwright, cobrindo validação de endpoints, status codes, respostas JSON, CRUD e fluxos E2E de navegação e produtos.</p>
 
-                    <div class="projetos"
-                    style = "background-image: url(Imagens/Projetos/projeto2.png);
-                    background-size: 230%;
-                    background-position: top left;
-                    background-repeat: no-repeat;">
-                        <div class="conteudo-hover">
-                            <p class="titulo-hover">DSList - Catálogo de Jogos com Spring Boot</p>
-                            <p class="descrição-hover">Projeto backend desenvolvido com Java + Spring Boot, que oferece uma API REST para listar jogos organizados por categorias (listas).</p>
-                            <a class="botao-hover-p2" href="https://github.com/zMaurici0/DSlist" target="_blank">
-                                Link Github
-                            </a>
-                        </div>
-                    </div>
+                        <details class="more">
+                            <summary>O que cobre</summary>
+                            <ul>
+                                <li>Testes REST com GET, POST, PUT e DELETE</li>
+                                <li>Validação de status codes e respostas JSON</li>
+                                <li>Testes E2E de navegação, busca e produtos</li>
+                            </ul>
+                        </details>
 
-                    <div class="projetos">
-                        <div class="conteudo-hover">
-                            <p class="titulo-hover">Em Breve</p>
+                        <div class="card-actions">
+                            <a class="repo-link" href="https://github.com/zMaurici0/Projeto-Web-API-QA-Jr" target="_blank" rel="noopener">Ver no GitHub</a>
                         </div>
                     </div>
-                    <div class="projetos">
-                        <div class="conteudo-hover">
-                            <p class="titulo-hover">Em Breve</p>
+                </article>
+
+                <!-- OpenCart e ServeRest -->
+                <article class="project-card">
+                    <div class="project-cover">
+                        <svg viewBox="0 0 320 130" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                            <rect width="320" height="130" fill="#161616"/>
+                            <rect width="4" height="130" fill="#ffcc00"/>
+                            <g font-family="JetBrains Mono, monospace" font-size="11">
+                                <text x="22" y="28" fill="#7c7c7c">caso-de-teste</text>
+                                <text x="22" y="54" fill="#f4f4f2">Passos</text>
+                                <text x="22" y="76" fill="#f4f4f2">Esperado</text>
+                                <text x="22" y="98" fill="#f4f4f2">Obtido</text>
+                            </g>
+                            <g>
+                                <rect x="108" y="46" width="150" height="8" rx="4" fill="#2e2e2e"/>
+                                <rect x="108" y="68" width="110" height="8" rx="4" fill="#2e2e2e"/>
+                                <rect x="108" y="90" width="130" height="8" rx="4" fill="#ffcc00" fill-opacity=".6"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="project-body">
+                        <h3>OpenCart e ServeRest | Manual</h3>
+                        <div class="tags"><span>Gherkin</span><span>Relatório de bug</span><span>API</span></div>
+                        <p>Testes manuais Web e API, com plano de testes, 26 cenários em BDD/Gherkin, testes positivos e negativos, evidências e documentação de bugs.</p>
+
+                        <details class="more">
+                            <summary>O que cobre</summary>
+                            <ul>
+                                <li>Elaboração de planos e casos de teste em BDD/Gherkin</li>
+                                <li>Validação de autenticação, CRUD e status codes da API</li>
+                                <li>Registro de bugs, evidências e resultados dos testes</li>
+                            </ul>
+                        </details>
+
+                        <div class="card-actions">
+                            <a class="repo-link" href="https://github.com/zMaurici0/qa-manual-portfolio" target="_blank" rel="noopener">Ver no GitHub</a>
                         </div>
                     </div>
-                </div>
+                </article>
+
             </div>
-       </div>
-    </body>
+        </section>
+
+
+        <!-- ========== EXPERIÊNCIA ========== -->
+        <section id="experiencia" class="band">
+            <div class="section experience">
+
+                <div class="section-title">
+                    <h2>Experiência</h2>
+                    <p>Onde automatizo hoje e como estou migrando para QA.</p>
+                </div>
+
+                <div class="experience-wrap">
+
+                    <ol class="timeline">
+
+                        <li class="timeline-item">
+                            <span class="timeline-date">Atual</span>
+                            <div class="timeline-content">
+                                <h3>Assistente de Automação <em>Grupo Enzo</em></h3>
+                                <ul>
+                                    <li>Criação de automações para otimização de processos internos utilizando Power Automate e Python</li>
+                                    <li>Scripts Python para conciliação de créditos de garantia, disparados por e-mail</li>
+                                    <li>Leitura de XMLs de notas de serviço com atualização no banco de dados</li>
+                                    <li>Manutenção e monitoramento das automações para garantir estabilidade e funcionamento contínuo</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="timeline-item">
+                            <span class="timeline-date">Em paralelo</span>
+                            <div class="timeline-content">
+                                <h3>Transição para QA <em>estudo e portfólio</em></h3>
+                                <ul>
+                                    <li>Pós-graduação em Qualidade e Testes de Software</li>
+                                    <li>Suítes com Playwright e Cucumber, relatórios no Allure e execução no GitHub Actions</li>
+                                    <li>Casos de teste e relatórios de bug em projetos manuais (OpenCart e ServeRest)</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========== HABILIDADES ========== -->
+        <section id="habilidades" class="section skills">
+
+            <div class="section-title">
+                <h2>Habilidades</h2>
+                <p>Tecnologias e ferramentas que uso nos testes e nas automações.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" alt="" loading="lazy"><span>Playwright</span></div>
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="" loading="lazy"><span>JavaScript</span></div>
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" loading="lazy"><span>TypeScript</span></div>
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" loading="lazy"><span>Python</span></div>
+                <div class="skill"><svg class="ui-icon skill-svg"><use href="#i-doc"/></svg><span>Cucumber e Gherkin</span></div>
+                <div class="skill"><svg class="ui-icon skill-svg"><use href="#i-board"/></svg><span>Page Object Model</span></div>
+                <div class="skill"><svg class="ui-icon skill-svg"><use href="#i-spark"/></svg><span>Allure Report</span></div>
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="" loading="lazy"><span>GitHub Actions</span></div>
+                <div class="skill"><img class="icon-light" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" loading="lazy"><span>Git e GitHub</span></div>
+                <div class="skill"><svg class="ui-icon skill-svg"><use href="#i-db"/></svg><span>SQL | Oracle</span></div>
+                <div class="skill"><svg class="ui-icon skill-svg"><use href="#i-link"/></svg><span>Power Automate</span></div>
+                <div class="skill"><svg class="ui-icon skill-svg"><use href="#i-spark"/></svg><span>Power Apps e SharePoint</span></div>
+            </div>
+
+        </section>
+
+
+        <!-- ========== FORMAÇÃO ========== -->
+        <section id="formacao" class="band">
+            <div class="section courses-section">
+
+                <div class="section-title">
+                    <h2>Formação</h2>
+                    <p>O que estou estudando agora.</p>
+                </div>
+
+                <div class="courses">
+                    <div class="courses-group">
+                        <span class="study-status">Em andamento</span>
+                        <ul class="courses-grid">
+                            <li class="course-card is-current">
+                                <h3>Pós-graduação em Qualidade e Testes de Software</h3>
+                            </li>
+                            <li class="course-card is-current">
+                                <h3>Bacharelado em Ciência da Computação</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========== CONTATO ========== -->
+        <section id="contato" class="contact">
+            <div class="contact-inner">
+
+                <div class="contact-content">
+                    <h2>Vamos conversar?</h2>
+                    <p>
+                        Procuro minha primeira oportunidade em QA e topo trabalhar com qualquer stack.
+                        Se meus projetos fizeram sentido para você, me chama.
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="https://www.linkedin.com/in/maurício-mota-006203306/" target="_blank" rel="noopener" class="button primary">LinkedIn</a>
+                        <a href="https://github.com/zMaurici0" target="_blank" rel="noopener" class="button secondary">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <span>© 2026 Maurício Mota</span>
+        <a href="#topo">Voltar ao topo</a>
+    </footer>
+
+
+    <script>
+        // Tema claro e escuro
+        var toggle = document.querySelector('.theme-toggle');
+        toggle.addEventListener('click', function () {
+            var claro = document.documentElement.dataset.theme !== 'light';
+            document.documentElement.dataset.theme = claro ? 'light' : 'dark';
+            toggle.setAttribute('aria-pressed', String(claro));
+        });
+    </script>
+
+</body>
 </html>
